@@ -27,40 +27,54 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">SaddleBrooke One</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-
-		<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Amenities</a>
-          </li>
-			<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
- 			<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-			<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="http://realestate.saddlebrooke.org/">Real Estate</a>
-          </li>
-          </li>
-			<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://www.saddlebrooke.org/member-login">Resident Login</a>
-          </li>
-          </ul>
-      </div>
-    </div>
-  </nav>
-
+<!--  Navigation  Original-->
+ 
     
     
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <a class="navbar-brand" href="/">SaddleBrooke One</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#activities" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activities</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#activities">Golf</a>
+          <a class="dropdown-item" href="#activities">Tennis</a>
+          <a class="dropdown-item" href="#activities">Dining</a>
+          <a class="dropdown-item" href="#activities">Community</a>
+          <a class="dropdown-item" href="#activities">Clubs</a>
+<!--
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+-->
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="http://realestate.saddlebrooke.org/">Real Estate</a>
+      </li>        
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="https://www.saddlebrooke.org/member-login">Resident Login</a>
+     </li>      
+      
+      </ul>
+<!--
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+-->
+  </div>
+</nav>
     
   <!-- Header -->
   <header class="masthead">
@@ -79,14 +93,15 @@
   <!-- Amenities Grid -->
   <section class="bg-light" id="portfolio">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Amenities</h2>
+        <a name="activities"></a> 
+      <div class="row">  
+          <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Activities</h2>
           <h3 class="section-subheading text-muted">Here are some things you can enjoy as a member of our community.</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3 col-sm-3 portfolio-item">
+         <div class="col portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -100,7 +115,7 @@
             <p class="text-muted">There are three courses: SaddleBrooke, Tucson and Catalina, which may be played in any combination to create a unique golf experience.</p>
           </div>
         </div>
-        <div class="col-sm-3 col-sm-3 portfolio-item">
+         <div class="col portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -114,7 +129,7 @@
             <p class="text-muted">Membership in the SaddleBrooke Tennis Club is open to all residents of SaddleBrooke but membership is not a requirement to use the courts.</p>
           </div>
         </div>
-        <div class="col-sm-3 col-sm-3 portfolio-item">
+         <div class="col portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -128,7 +143,7 @@
             <p class="text-muted">Within the SaddleBrooke community, you will find seven restaurants for dining choices from morning to evening. </p>
           </div>
         </div>
-        <div class="col-sm-3 col-sm-3 portfolio-item">
+         <div class="col portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -142,7 +157,21 @@
             <p class="text-muted">There are many services available within SaddleBrooke. The communities of Catalina and Oro Valley are just a short drive away. Or you can drive a bit further to Tucson.</p>
           </div>
         </div>
-      </div>
+         <div class="col portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/cars_pano_sq.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Clubs</h4>
+            <p class="text-muted">With more than 170 clubs and groups, SaddleBrooke residents have access to every conceivable activity from relaxing meditation to extreme desert adventure hiking, and everything in between. </p>
+          </div>
+        </div>
+        </div>
     </div>
   </section>
 
@@ -207,8 +236,7 @@
               </div>
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
-                <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+<button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
               </div>
             </div>
           </form>  
@@ -273,7 +301,7 @@
                 <p>Nestled against the foothills of the Santa Catalina Mountains, SaddleBrooke One provides residents and guests with 27 holes of park-land style golf featuring undulating fairways and tall native trees. There are three courses: SaddleBrooke, Tucson and Catalina, which may be played in any combination to create a unique golf experience.</p>
 
                  <!--Accordion wrapper-->
-                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="false">
 
                   <!-- Accordion card -->
                   <div class="card">
@@ -384,11 +412,10 @@
 
                 <p>The Tennis Club actively manages the tennis court usage within SaddleBrooke (Eight courts at the SaddleBrooke Tennis Center and 11 other courts located within SaddleBrooke). Membership in the SaddleBrooke Tennis Club is open to all residents of SaddleBrooke but membership is not a requirement to use the courts.
                 </p>         
-                  
-                  
+                     
  
                 <!--Accordion wrapper-->
-                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="false">
 
                   <!-- Accordion card -->
                   <div class="card">
@@ -462,7 +489,7 @@
                   </div>
                   <!-- Accordion card -->
 
-                                     <!-- Accordion card -->
+                   <!-- Accordion card -->
                   <div class="card">
 
                     <!-- Card header -->
@@ -516,7 +543,7 @@
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingSix6">
                       <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSix6"
-                        aria-expanded="false" aria-controls="collapseFive5">
+                        aria-expanded="false" aria-controls="collapseSix6">
                         <h5 class="mb-0">
                           Socials<i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
@@ -575,7 +602,7 @@
                 <p>A reciprocal use agreement with SaddleBrooke Two rounds out the restaurant options with a the MountainView Bistro, Mesquite Grill and Preserve Restaurant.</p>
 
                  <!--Accordion wrapper-->
-                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="false">
 
                   <!-- Accordion card -->
                   <div class="card">
@@ -594,9 +621,9 @@
                     <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
                       data-parent="#accordionEx">
                       <div class="card-body">
-<p>Dining in The Vistas features a panoramic view of the Santa Catalina Mountains. The perfect backdrop for nightly dining or a special celebration dinner. Several times each month the best entertainment in Tucson performs in this venue.</p>
-<p>Chef Dave Bishow presents a frequently changing menu, along with weekly special features and classic home-style favorites.</p>
-<p>The front lounge, along with the Vistas, is center stage for live entertainment several evenings per month. The Agave Lounge is the place to be for the live entertainment!</p>
+                        <p>Dining in The Vistas features a panoramic view of the Santa Catalina Mountains. The perfect backdrop for nightly dining or a special celebration dinner. Several times each month the best entertainment in Tucson performs in this venue.</p>
+                        <p>Chef Dave Bishow presents a frequently changing menu, along with weekly special features and classic home-style favorites.</p>
+                        <p>The front lounge, along with the Vistas, is center stage for live entertainment several evenings per month. The Agave Lounge is the place to be for the live entertainment!</p>
                       </div>
                     </div>
 
@@ -686,7 +713,7 @@
                 <p>There are many services available within SaddleBrooke. The communities of Catalina and Oro Valley are just a short drive away. Or you can drive a bit further to Tucson where you will find all the businesses and leisure of a large city.</p>
 
                  <!--Accordion wrapper-->
-                <div class="accordion md-accordion" id="accordionEx" role="tablist">
+                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="false">
 
                   <!-- Accordion card -->
                   <div class="card">
@@ -731,7 +758,7 @@
                       <div class="card-body">
                         <p>SaddleBrooke is served by Golder Ranch Fire District. There are two fire stations within SaddleBrooke that are staffed 24/7. In addition to responding to fire and emergency medical calls, the firemen graciously give their time to educate the residents on safety issues, remove unwanted desert creatures from yards, change light bulbs in hard to reach vaulted ceilings, and replace batteries in smoke detectors.</p>
 
-<p>Deputies of the Pinal County Sheriff are frequently seen patrolling SaddleBrooke in addition to responding to calls for assistance. They maintain a substation in the SaddleBrooke business center.</p>
+                        <p>Deputies of the Pinal County Sheriff are frequently seen patrolling SaddleBrooke in addition to responding to calls for assistance. They maintain a substation in the SaddleBrooke business center.</p>
                       </div>
                     </div>
 
@@ -744,7 +771,7 @@
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingThree3">
                       <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
-                        aria-expanded="false" aria-controls="collapseTwo2">
+                        aria-expanded="false" aria-controls="collapseThree3">
                         <h5 class="mb-0">
                           Business Center<i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
@@ -782,7 +809,7 @@
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingFour4">
                       <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
-                        aria-expanded="false" aria-controls="collapseThree3">
+                        aria-expanded="false" aria-controls="collapseFour4">
                         <h5 class="mb-0">
                           Services in Oro Valley and Catalina<i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
@@ -816,7 +843,7 @@
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingFive5">
                       <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5"
-                        aria-expanded="false" aria-controls="collapseThree3">
+                        aria-expanded="false" aria-controls="collapseFive5">
                         <h5 class="mb-0">
                           Services in Tucson<i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
@@ -850,6 +877,482 @@
     </div>
   </div>
 
+    
+ <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Clubs</h2>
+                <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                <img class="img-fluid d-block mx-auto" src="img/cars_pano.jpg" alt="">
+                <p>Within the SaddleBrooke community, you will find many organizations.</p>
+
+                 <!--Accordion wrapper-->
+                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="false">
+
+                  <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingOne1">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                        aria-controls="collapseOne1">
+                        <h5 class="mb-0">
+                         Arts and Crafts<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Basket Weaving</li>
+                        <li>Basketry Club, SaddleBrooke</li>
+                        <li>Beading Babes</li>
+                        <li>Casual Quilters</li>
+                        <li>Digital Imaging Group SaddleBrooke (DIGS)</li>
+                        <li>Gift Shop at SaddleBrooke</li>
+                        <li>Knit Wits</li>
+                        <li>Machine Embroidery Group</li>
+                        <li>Needlecraft Group</li>
+                        <li>Paper Crafters Club</li>
+                        <li>Pottery Club at SaddleBrooke</li>
+                        <li>SaddleBrooke Fine Arts Guild</li>
+                        <li>SaddleBrooke Friday Quilters</li>
+                        <li>SaddleBrooke Greenware (Ceramics) Club</li>
+                        <li>SaddleBrooke Woodcarvers Club</li>
+                        <li>SB Scrapbooking Cut Ups</li>
+                        <li>Sew & Sews</li>
+                        <li>Sew Busy Cut-Ups</li>
+                        <li>Silversmith and Lapidary Club</li>
+                        <li>Stained Glass Club</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingTwo2">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false"
+                        aria-controls="collapseTwo2">
+                        <h5 class="mb-0">
+                         Education<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseTwo2" class="collapse show" role="tabpanel" aria-labelledby="headingTwo2"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li> Friends of Teen Sew Cool</li>
+                        <li> Genealogy Club</li>
+                        <li> Institute For Learning In Retirement</li>
+                        <li> Libraries</li>
+                        <li> Metaphysical Study Group (MSG)</li>
+                        <li> Nature Club</li>
+                        <li> SaddleBrooke Computer Club</li>
+                        <li> SaddleBrooke Great Decisions Discussion Group</li>
+                        <li> SaddleBrooke Writers' Group</li>
+                        <li> SkyGazers (Astronomy Club)</li>
+                        <li> Spanish Culture Club of SaddleBrooke</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->
+
+                      <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingThree3">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="false"
+                        aria-controls="collapseThree3">
+                        <h5 class="mb-0">
+                         Games and Cards<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseThree3" class="collapse show" role="tabpanel" aria-labelledby="headingThree3"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Bingo at SaddleBrooke</li>
+                        <li>Bocce Sputters Bridge</li>
+                        <li>Bridge Babes</li>
+                        <li>Bridge Classes at SaddleBrooke</li>
+                        <li>Bridge For All</li>
+                        <li>Bridge For Fun</li>
+                        <li>Bridge Mixer</li>
+                        <li>Canasta with Conversation & Laughter</li>
+                        <li>Chess Club</li>
+                        <li>Dots & Bams Mah Jongg Group</li>
+                        <li>Hand and Foot Cards</li>
+                        <li>Ladies Party Bridge Wednesday Mornings</li>
+                        <li>Ladies Tuesday Gin Rummy Group</li>
+                        <li>Let's Play Mah Jongg</li>
+                        <li>Monday Mixed Duplicate Bridge SaddleBrooke One</li>
+                        <li>Monday Night Poker</li>
+                        <li>Mountain View Duplicate Bridge Club</li>
+                        <li>Open Poker Club</li>
+                        <li>Pinochle Club</li>
+                        <li>Real Deal Poker Club</li>
+                        <li>Small Slams Bridge Club</li>
+                        <li>Three Table Bridge</li>
+                        <li>Thursday Evening Bridge Pairs</li>
+                        <li>Tuesday Afternoon Bridge Club</li>
+                        <li>Tuesday Morning Mah Jongg</li>
+                        <li>Verde Mah Jongg</li>
+                        <li>Wednesday Ladies Duplicate Bridge, SaddleBrooke</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->                  
+
+                    <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingFour4">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4" aria-expanded="false"
+                        aria-controls="collapseFour4">
+                        <h5 class="mb-0">
+                         Golf Leagues<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseFour4" class="collapse show" role="tabpanel" aria-labelledby="headingFour4"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Beginners League</li>
+                        <li>Men's Nine Hole Golf League</li>
+                        <li>SaddleBrooke Lady Niners</li>
+                        <li>SaddleBrooke Men's Golf Association</li>
+                        <li>SaddleBrooke Men's Putters</li>
+                        <li>SaddleBrooke Women's Golf Association -18</li>
+                        <li>Verde Sputters</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->                    
+
+                      <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingFive5">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5" aria-expanded="false"
+                        aria-controls="collapseFive5">
+                        <h5 class="mb-0">
+                         Others<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseFive5" class="collapse show" role="tabpanel" aria-labelledby="headingFive5"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Freethinkers</li>
+                        <li>R.C. Modelers</li>
+                        <li>RV Club</li>
+                        <li>Sonoran Searchers #1444</li>
+                      </div>
+                    </div>
+
+                  </div>                  
+                <!-- Accordion card -->                    
+                   
+                <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingSix6">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseSix6" aria-expanded="false"
+                        aria-controls="collapseSix6">
+                        <h5 class="mb-0">
+                         Pet Groups<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseSix6" class="collapse show" role="tabpanel" aria-labelledby="headingSix6"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Dog Park Association</li>
+                        <li>Doodle Dogs of SaddleBrooke</li>
+                        <li>SaddleBrooke Pet Rescue Network</li>
+                        <li>Wags & Walkers at SaddleBrooke</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->                    
+
+                 <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingSeven7">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseSeven7" aria-expanded="false"
+                        aria-controls="collapseSeven7">
+                        <h5 class="mb-0">
+                         Political<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseSeven7" class="collapse show" role="tabpanel" aria-labelledby="headingSeven7"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Democratic Club</li>
+                        <li>League of Women Voters of Greater Tucson, SaddleBrooke Unit</li>
+                        <li>Republican Women of Pinal County</li>
+                        <li>SaddleBrooke Republican Club</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->                   
+
+                  <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingEight8">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseEight8" aria-expanded="false"
+                        aria-controls="collapseEight8">
+                        <h5 class="mb-0">
+                         Religious Study<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseEight8" class="collapse show" role="tabpanel" aria-labelledby="headingEight8"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Community Church at SaddleBrooke</li>
+                        <li>Course in Miracles</li>
+                        <li>Institute For Judaic Services And Studies</li>
+                        <li>Resurrection Church @ SaddleBrooke</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->                  
+  
+                    
+                  <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingNine9">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseNine9" aria-expanded="false"
+                        aria-controls="collapseNine9">
+                        <h5 class="mb-0">
+                         Service<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseNine9" class="collapse show" role="tabpanel" aria-labelledby="headingNine9"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Back to Basics</li>
+                        <li>Community Outreach</li>
+                        <li>Desert View Cinema Club</li>
+                        <li>Friends of Oracle State Park</li>
+                        <li>Friends of the SaddleBrooke Libraries</li>
+                        <li>Golden Eagle Club of SaddleBrooke</li>
+                        <li>SaddleBrooke Master Gardeners</li>
+                        <li>SaddleBrooke Rotary</li>
+                        <li>SaddleBrooke Sunrise Rotary Club</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->                  
+                    
+                   <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingTen10">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseTen10" aria-expanded="false"
+                        aria-controls="collapseTen10">
+                        <h5 class="mb-0">
+                         Singing, Dancing and Performing<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseTen10" class="collapse show" role="tabpanel" aria-labelledby="headingTen10"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Argentine Tango Society (SATS) SaddleBrooke</li>
+                        <li>Community Circle Players</li>
+                        <li>Coyote Country Cloggers</li>
+                        <li>English Country Dance Club</li>
+                        <li>Hawaiian Hula Lessons</li>
+                        <li>Latin Rhythm Dance Club</li>
+                        <li>Let's Dance Club</li>
+                        <li>Readers Theatre</li>
+                        <li>SaddleBrooke Ballroom Dance Club</li>
+                        <li>SaddleBrooke Line Dance Club</li>
+                        <li>SaddleBrooke Partners Western Dance Club</li>
+                        <li>SaddleBrooke Performing Arts Group</li>
+                        <li>SaddleBrooke Singers</li>
+                        <li>SaddleBrooke Squares</li>
+                        <li>Silver Belles Performance Dance Team</li>
+                        <li>The Clogging Desert Stars</li>
+                        <li>Theatre Guild SaddleBrooke</li>
+                        <li>Why Not Dance - Let's Dance</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card --> 
+                    
+                    
+                   <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingEleven11">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseEleven11" aria-expanded="false"
+                        aria-controls="collapseEleven11">
+                        <h5 class="mb-0">
+                         Social Groups<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseEleven11" class="collapse show" role="tabpanel" aria-labelledby="headingEleven11"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Book Discussion Group</li>
+                        <li>British Club</li>
+                        <li>Gays, Lesbians and Allies at SaddleBrooke (GLAAS)</li>
+                        <li>German American Friendship Club</li>
+                        <li>Jewish Friendship Group</li>
+                        <li>SaddleBrooke Francophiles</li>
+                        <li>SaddleBrooke Links Players Fellowship</li>
+                        <li>SaddleBrooke Off-Road Bunch (Jeep Club)</li>
+                        <li>SaddleBrooke Singles Club</li>
+                        <li>Women on Our Own</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->                
+                    
+                 <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingTwelve12">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwelve12" aria-expanded="false"
+                        aria-controls="collapseTwelve12">
+                        <h5 class="mb-0">
+                         Sports, Athletics and Exercise<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseTwelve12" class="collapse show" role="tabpanel" aria-labelledby="headingTwelve12"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Archery Club</li>
+                        <li>Billiards Club</li>
+                        <li>Cyclemasters</li>
+                        <li>Hiking Club</li>
+                        <li>Pickleball Association (SPA)</li>
+                        <li>Pool Players of The Brooke</li>
+                        <li>SaddleBrooke EZ Riders</li>
+                        <li>SaddleBrooke Softball</li>
+                        <li>SaddleBrooke Striders</li>
+                        <li>SaddleBrooke Table Tennis Club</li>
+                        <li>SaddleBrooke Tennis Club</li>
+                        <li>SaddleBrooke Volleyball Club</li>
+                        <li>Swim Club</li>
+                        <li>Water Aerobics</li>
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->                   
+      
+                    <!-- Accordion card -->
+                  <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingThirteen13">
+                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseThirteen13" aria-expanded="false"
+                        aria-controls="collapseThirteen13">
+                        <h5 class="mb-0">
+                         Support<i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseThirteen13" class="collapse show" role="tabpanel" aria-labelledby="headingThirteen13"
+                      data-parent="#accordionEx">
+                      <div class="card-body">
+                        <li>Final Frontier</li>
+                        <li>Perky Parkies SilverSneakers</li>
+                        <li>SaddleBrooke Troop Support</li>
+                        <li>Senior Village at SaddleBrooke</li>
+                        <li>Stroke/Neurological Caregivers Support Group</li>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Accordion card -->                
+
+                  </div>
+                <!-- Accordion wrapper -->                 
+                           
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
 
   <!-- Map Modal -->
   <div class="portfolio-modal modal fade" id="mapModal" tabindex="-1" role="dialog" aria-hidden="true">
