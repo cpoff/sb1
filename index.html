@@ -59,9 +59,11 @@
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
       </li>
+<!--
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="http://realestate.saddlebrooke.org/">Real Estate</a>
       </li>        
+-->
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="https://www.saddlebrooke.org/member-login">Resident Login</a>
      </li>      
@@ -82,13 +84,12 @@
       <div class="intro-text">
        <div class="intro-lead-in">Where the mountains meet the fairways</div>
         <div class="intro-heading text-uppercase">SaddleBrooke One</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <a class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" href="#contactModal">Tell Me More</a>
       </div>
     </div>
   </header>
 
- 
-    
+
     
   <!-- Amenities Grid -->
   <section class="bg-light" id="portfolio">
@@ -196,16 +197,18 @@
     
 <div itemscope itemtype="http://schema.org/LocalBusiness">
   <h3><span itemprop="name">SaddleBrooke One</span></h3>
-  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  <p>  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
     <span itemprop="streetAddress">64500 E. SaddleBrooke Blvd</span><br>
     <span itemprop="addressLocality">Tucson</span>, <span itemprop="addressRegion">AZ</span> <span itemprop="postalCode">85739</span>
   </div><br>
   Phone: <span itemprop="telephone"><a href="tel:520-825-3048">520-825-3048</a></span><br>
   E-mail: <span itemprop="email"><a href="mailto:info@saddlebrooke.org ">info@saddlebrooke.org </a></span>
-</div>
-            <a class="btn btn-primary btn-lg" data-toggle="modal" href="#mapModal" role="button">Maps and Directions</a>
-</p>    
-      
+</div> </p> 
+ <p>           <a class="btn btn-primary btn-lg" data-toggle="modal" href="#mapModal" role="button">Maps and Directions</a>
+            <a class="btn btn-primary btn-lg" data-toggle="modal" href="#contactModal" role="button">Contact Us</a>
+  </p>   
+    <a name="contact"></a>
+<!--
    <section id="contact">
     <div class="container">
       <div class="row">
@@ -244,6 +247,7 @@
       </div>
     </div>
   </section>     
+-->
   </div>
   </section>
 
@@ -375,6 +379,7 @@
                   </div>
                   <!-- Accordion card -->
 
+                    
                 </div>
                 <!-- Accordion wrapper -->                 
                            
@@ -592,7 +597,7 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Dining</h2>
                 <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
-                <img class="img-fluid d-block mx-auto" src="img/show_dining07_22x7.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/xshow_dining06_22x7.jpg" alt="">
                 <p>Within the SaddleBrooke community, you will find seven restaurants for dining choices from morning to evening. At SaddleBrooke One, the casual RoadRunner Grill and patio offers breakfast and lunch. There are themed evenings and special events scheduled on the patio which overlooks the golf course. Gourmet pizza is found at Brooke One Pizza Kitchen.
                     
                 <p>For your evening dining pleasure, the place to relax and order from a wide-selection of menu items is upstairs in The Vistas Dining and The Agave Lounge with its twilight views of the Catalina Mountains. You can even choose to order meals to go, seven days a week. Menus are updated frequently and posted to the Residents Website.</p>
@@ -600,6 +605,7 @@
                 <p>Frequently offered, special culinary events feature wine tasting, creative menus and themed dinners. Meet your friends for dinner, plan a special event dinner or just stop by for a spur-of-the-moment snack. All of that is within easy reach at our SaddleBrooke restaurants.</p>
 
                 <p>A reciprocal use agreement with SaddleBrooke Two rounds out the restaurant options with a the MountainView Bistro, Mesquite Grill and Preserve Restaurant.</p>
+                  <p><a href="https://www.saddlebrooke.org/sb_all-menus">Click here</a> for the latest menus.</p>
 
                  <!--Accordion wrapper-->
                 <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="false">
@@ -1340,8 +1346,9 @@
                   <!-- Accordion card -->                
 
                   </div>
-                <!-- Accordion wrapper -->                 
-                           
+                  <!-- Accordion wrapper -->                 
+
+                  
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Window</button>
@@ -1382,6 +1389,39 @@
       </div>
     </div>
   </div>
+
+
+  <!-- Contact Modal -->
+  <div class="portfolio-modal modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+<!--                <h2 class="text-uppercase">Request a brochure</h2>-->
+<!--            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSexMM24b7LFd9Xh-mJRpaXI3qPdfys7xUvTf3k8mBzNu0WuJg/viewform?embedded=true" width="640" height="1604" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                  
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
