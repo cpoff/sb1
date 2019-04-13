@@ -4,7 +4,7 @@ Error: File to import not found or unreadable: ../../../../../scss/functions.
          /Applications/Adobe Dreamweaver CC 2019/Configuration/SassFrameworks/bourbon
          /Applications/Adobe Dreamweaver CC 2019/Configuration/SassFrameworks/neat
          /Applications/Adobe Dreamweaver CC 2019/Configuration/SassFrameworks/base
-        on line 27 of /Users/poffdev/Documents/SB1/sb1 (original)/docs/4.3/assets/scss/docs.scss
+        on line 27 of /Users/poffdev/Documents/SB1/sb1/docs/4.3/assets/scss/docs.scss
 
 22: //   and layout of the Bootstrap docs. They are not included in our builds.
 23: //
@@ -19,7 +19,7 @@ Error: File to import not found or unreadable: ../../../../../scss/functions.
 32: @import "variables";
 
 Backtrace:
-/Users/poffdev/Documents/SB1/sb1 (original)/docs/4.3/assets/scss/docs.scss:27
+/Users/poffdev/Documents/SB1/sb1/docs/4.3/assets/scss/docs.scss:27
 /Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/tree/import_node.rb:44:in `import'
 /Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -56,4 +56,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../../../../../scss/functions.\A        Load paths:\A          /Applications/Adobe Dreamweaver CC 2019/Configuration/SassFrameworks/bourbon\A          /Applications/Adobe Dreamweaver CC 2019/Configuration/SassFrameworks/neat\A          /Applications/Adobe Dreamweaver CC 2019/Configuration/SassFrameworks/base\A         on line 27 of /Users/poffdev/Documents/SB1/sb1 (original)/docs/4.3/assets/scss/docs.scss\A \A 22: //   and layout of the Bootstrap docs. They are not included in our builds.\A 23: //\A 24: // Happy Bootstrapping!\A 25: \A 26: // Load Bootstrap variables and mixins\A 27: @import \"../../../../../scss/functions\";\A 28: @import \"../../../../../scss/variables\";\A 29: @import \"../../../../../scss/mixins\";\A 30: \A 31: // Load docs components\A 32: @import \"variables\";"; }
+  content: "Error: File to import not found or unreadable: ../../../../../scss/functions.\A        Load paths:\A          /Applications/Adobe Dreamweaver CC 2019/Configuration/SassFrameworks/bourbon\A          /Applications/Adobe Dreamweaver CC 2019/Configuration/SassFrameworks/neat\A          /Applications/Adobe Dreamweaver CC 2019/Configuration/SassFrameworks/base\A         on line 27 of /Users/poffdev/Documents/SB1/sb1/docs/4.3/assets/scss/docs.scss\A \A 22: //   and layout of the Bootstrap docs. They are not included in our builds.\A 23: //\A 24: // Happy Bootstrapping!\A 25: \A 26: // Load Bootstrap variables and mixins\A 27: @import \"../../../../../scss/functions\";\A 28: @import \"../../../../../scss/variables\";\A 29: @import \"../../../../../scss/mixins\";\A 30: \A 31: // Load docs components\A 32: @import \"variables\";"; }
